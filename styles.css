@@ -8,6 +8,7 @@ body {
     font-family: "Arial", sans-serif;
     line-height: 1.6;
     color: #333;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 header {
@@ -24,7 +25,9 @@ header h1 {
 
 main {
     position: relative; /* Ensure relative positioning for absolute video positioning */
-    overflow: hidden; /* Hide overflow to prevent video from disrupting layout */
+    width: 100%; /* Ensure full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 #background-video {
@@ -34,7 +37,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Cover entire area with video */
-    z-index: -1; /* Place video behind content */
 }
 
 .content {
