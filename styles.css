@@ -1,49 +1,70 @@
 /* Reset and Basic Styling */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6; /* Improved readability */
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
-/* Headings */
-h1, h2 {
-  color: #333;
-  margin-bottom: 15px; /* Improved spacing */
+header {
+    background-color: #337ab7;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Sections */
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 section {
-  background-color: #f7f7f7;
-  padding: 20px;
-  margin-bottom: 30px; /* Increased for better spacing between sections */
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Improved box-shadow */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Links */
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
 a {
-  text-decoration: none;
-  color: #337ab7;
+    color: #337ab7;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-  color: #23527c;
+    color: #23527c;
 }
 
-/* Download Button */
 .download-button {
-  background-color: #337ab7;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block; /* Ensures button width fits content */
-  text-align: center; /* Centers text in the button */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+    display: inline-block;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .download-button:hover {
-  background-color: #23527c;
+    background-color: #23527c;
 }
